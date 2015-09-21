@@ -11,24 +11,33 @@ var styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   rightContainer: {
-    flex: 1
+    flex: 2,
   },
   title: {
     fontSize: 20,
     marginBottom: 8,
-    textAlign: 'center'
+    textAlign: 'center',
   },
   year: {
-    textAlign: 'center'
+    textAlign: 'center',
   },
   thumbnail: {
     width: 53,
-    height: 81
+    height: 81,
   },
   listView: {
     paddingTop: 20,
-    backgroundColor: '#F5FCFF'
-  }
+    backgroundColor: '#F5FCFF',
+  },
+  header: {
+    backgroundColor: '#3a5795',
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingLeft: 10,
+  },
+  button: {
+    color: '#ffffff',
+  },
 });
 
 module.exports = styles;

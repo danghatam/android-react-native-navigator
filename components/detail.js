@@ -21,6 +21,11 @@ class Detail extends Component {
     let movie = this.props.movie;
     return (
       <View style={styles.contianer} >
+        <TouchableOpacity onPress={this._handlePress.bind(this)} style={styles.header}>
+          <View>
+            <Text style={styles.button}>&#60; Go back</Text>
+          </View>
+        </TouchableOpacity>
         <Image
           source={{uri: movie.posters.thumbnail}}
           style={styles.thumbnail}
@@ -31,11 +36,7 @@ class Detail extends Component {
           <Text style={styles.year}>Description: {movie.synopsis}</Text>
           <Text style={styles.year}>Rating: {movie.mpaa_rating}</Text>
         </View>
-        <TouchableOpacity onPress={this._handlePress.bind(this)}>
-          <View>
-            <Text>Go back</Text>
-          </View>
-        </TouchableOpacity>
+
       </View>
     );
   }
